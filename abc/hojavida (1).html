@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hoja de Vida - Julian Serrano</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+
+        header {
+            background-color: #333;
+            color: white;
+            padding: 15px 0;
+            text-align: center;
+        }
+
+        nav {
+            background-color: #444444;
+            overflow: hidden;
+        }
+
+        nav a {
+            color: red;
+            padding: 14px 20px;
+            text-decoration: solid;
+            float: right;
+        }
+
+        nav a:hover {
+            background-color: #ddd;
+            color: black;
+        }
+
+        .content {
+            display: flex;
+            padding: 20px;
+            justify-content: space-between;
+        }
+
+        .main-content {
+            width: 70%;
+            padding: 20px;
+            background-color: white;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .sidebar {
+            width: 25%;
+            padding: 20px;
+            background-color: rgb(196, 185, 241);
+            border-radius: 20px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        h2 {
+            color: #333;
+        }
+
+        .section-title {
+            color: #007BFF;
+        }
+
+        .list {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        .list li {
+            margin-bottom: 10px;
+        }
+
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 10px 0;
+            position: sticky;
+            width: 100%;
+            bottom: 0;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Hoja de Vida - Julian Serrano</h1>
+    </header>
+
+    <nav>
+        <a href="#perfil">Perfil</a>
+        <a href="#educacion">Educación</a>
+        <a href="#portafolio">Portafolio</a>
+        <a href="#habilidades">Habilidades</a>
+    </nav>
+
+    <div class="content">
+        <div class="main-content">
+            <section id="perfil">
+                <h2 class="section-title">Perfil Profesional</h2>
+                <p>Estudiante de 8vo semestre de ingenieria en Sistemas con conocimiento en Python,C,bases de datos sql y con muchas granas de seguir aprendiendo</p>
+            </section>
+
+            <section id="educacion">
+                <h2 class="section-title">Educación</h2>
+                <ul class="list">
+                    <li><strong>Tecnico en Sistemas</strong> - SENA, 2010-2012</li>
+                    <li><strong>Curso de Analisis de Datos y vision Artificial</strong> - Academi, 2023</li>
+                    <li><strong>Diplomado en Inteligencia Artificial</strong> - Instituto Tech, 2022</li>
+                </ul>
+            </section>
+
+            <section id="experiencia">
+                <h2 class="section-title">Portafolio</h2>
+                <ul class="list">
+                    <li><strong>Red Neuronal</strong> 
+                        <ul>
+                            <li>Entrenamiento mediante datos previamente analizados</li>
+                            <li>Implementacion de la red Neuronal para la prediccion de precios de GPU'S segun los años</li>
+                        </ul>
+                    </li>
+                    <li><strong>Servidores</strong>
+                        <ul>
+                            <li>Configuracion de servicios para multiple edificios tipo empresarial</li>
+                            <li>Implementacion de cluster de alta disponibilidad con servidores linux</li>
+                        </ul>
+                    </li>
+                </ul>
+            </section>
+
+            <section id="habilidades">
+                <h2 class="section-title">Habilidades</h2>
+                <ul class="list">
+                    <li>HTML, CSS, JavaScript</li>
+                    <li>Desarrollo con frameworks como React y Angular</li>
+                    <li>Trabajo con bases de datos SQL y NoSQL</li>
+                    <li>Control de versiones con Git</li>
+                    <li>Desarrollo de aplicaciones móviles con React Native</li>
+                </ul>
+            </section>
+        </div>
+
+        <div class="sidebar">
+            <h3 class="section-title">Datos Personales</h3>
+            <p><strong>Nombre:</strong> Juan Pérez</p>
+            <p><strong>Email:</strong> juanperez@email.com</p>
+            <p><strong>Teléfono:</strong> +123 456 789</p>
+            <p><strong>Dirección:</strong> Calle Ficticia 123, Ciudad, País</p>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2024 Juan Pérez - Todos los derechos reservados</p>
+    </footer>
+
+</body>
+</html>
