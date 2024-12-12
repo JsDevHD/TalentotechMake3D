@@ -3,75 +3,165 @@
 <head>
   <title>Make3D</title>
   <style>
+    *{
+        margin: 0;
+        padding: 0;
+        
+    }
     body {
             font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-            height:  200vh;
             background-color: #a6e7e4;
-            
+            margin: 0%;
+            background-size: contain;
+            background-repeat: repeat;
+            background-attachment: local;
+            background-image: url(https://image.slidesdocs.com/responsive-images/background/business-card-square-body-blue-and-white-minimalist-powerpoint-background_02e71ec1ca__960_540.jpg);
         }
 
         header {
-            background-image: url(https://cysae.com/wp-content/uploads/2021/03/cysae-impresion-3d-leyes-scaled.jpg);
+            background-image: url("./imagns/lifestyle-designer-using-3d-printer.jpg");
             background-size: cover; 
-            background-position: center;
             background-attachment:fixed; 
             background-repeat: no-repeat;
-            background-color: #333;
             color: white;
-            padding: 20vh 100vh;
-            text-align: center;
+            height: 100vh;
+            display: flex;
+            align-items: center;
+            align-content: center;
+            justify-content: center;
 
             
         }
-
-        div.sticky {
-        position: sticky;
-        top: 0;
-        padding: 10px;
-        font-size: 50px;
+        header div {
+            background-color: rgba(0, 0, 0, 0.2);
+            font-size: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+           
+            
         }
 
-        nav a {
+        header div h1{
+            font-size: 90px;
+            max-height: 95px;
+        }
+
+        nav{
+            width: 100vw;
+            height: 7vh; 
+            background-color: rgb(0, 0, 0);
+            position:fixed;
+        }
+        nav ul{
+
+            display:flex; 
+            justify-content: space-around;
+
+        }
+
+        nav ul a {
             color: rgb(242, 246, 252);
-            padding: 14px 50px;
             text-decoration: solid;
             float: right;
-            
+            height: 7vh;
+            width: 13vw;    
+            display:flex; 
+            text-align: center; 
+            justify-content: center;
+            align-items: center;
             
         }
         nav a:hover {
-            background-color: #092cf0;
+            background-color: #4aa3df;
             color: rgb(0, 0, 0);
-            font-size: 110%;
+            font-size: 120%;
         }
-</style>
-    <link rel="icon" href="imagns/3d-being-printed-by-a-volumetric-printer_44226.ico" type="image/x-icon">
-</head>     
+        button {
+            background-color: #4aa3df;
+            border: none;
+            color: white;
+            padding: 15px 32px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 16px;
+            margin: 4px 2px;
+            cursor: pointer;
+            border-radius: 20px;
+        }   
+        button:hover{
+            font-size: 110%;
+            box-shadow: 0 12px 16px 0 rgba(91, 121, 255, 0.466);
+        }
 
-<header id="home">
-    <div>
-        <H1 style="font-size: 700%; color: rgb(7, 43, 250);">Make3D </H1>
-    </div>
-</header>
+        section div{
+            display: flex;
+            flex-direction: row;
+            text-align: center; 
+            align-items: center;
+            justify-content: space-around;
 
-<body>
-    <nav style="position: sticky; top: 0;">
-    <ul style="display:flex; text-align: center; justify-content: space-around; background-color: rgb(13, 14, 14);">
+
         
-        <a href="#home">Inicio</a>
-        <a href="#home">Nosotros</a>
-        <a href="#home">Servicios/Productos</a>
-        <a href="#home">Galeria</a>
-    </ul>
+        }
+
+        section div img{
+            margin-top: 20px;
+            filter: invert(20%);;
+        }
+
+        section div h1{
+            margin-right: 20px;
+            margin-top: 20px;
+            max-width: 99px;
+        }
+        section div p{
+            margin: 20px;
+            text-align: justify; 
+            
+
+        }
+
+        
+
+</style>
+    <link rel="icon" href="imagns/Make3Dlogo.ico" type="image/x-icon">
+</head>     
+<body>
+    <nav>
+        <ul>
+            <a href="#home">Inicio</a>
+            <a href="#nosotros">Servicios/Productos</a>
+            <a href="#home">Galeria</a>
+            <a href="#home">Contactanos</a>
+        </ul>
     </nav>
-
-    <section>
-
-        <h1 style="font-size: 200%;">Nosotros</h1>
-
-        <p>Somos una empresa con amplia experiencia en el diseño e impresión de productos en 3D, asesorías y venta de insumos e impresoras; así mismo, realizamos talleres y capacitaciones para que conozcan las funciones que ofrecen las impresoras y así sacar el máximo provecho. </p>
+    <header id="home">
+        <div>
+            <h1>Make3D</h1>
+            <P>Impresion de la mas alta calidad y al mejor precio.</P>
+            <a href="#nosotros"><button>Conocenos</button></a>
+    
+        </div>
+    </header>
+    
+    <section id="nosotros">
+       <div>
+         <img src="https://cdn-icons-png.flaticon.com/512/4906/4906519.png" alt="" width="80px" height="70px">
+         <img src="https://cdn-icons-png.flaticon.com/512/1628/1628579.png" alt=""  width="70px" height="68px">
+         <img src="https://cdn-icons-png.flaticon.com/512/3860/3860260.png" alt=""  width="80px" height="70px">
+       </div>
+        <div> <h1><strong>Nosotros</strong></h1>
+            <h1><strong>Mision</strong></h1>
+            <h1><strong>Vision</strong></h1>
+        </div>
+        <div>
+            <p>Somos una empresa con amplia experiencia en el diseño e impresión de productos en 3D, asesorías y venta de insumos e impresoras; así mismo, realizamos talleres y capacitaciones para que conozcan las funciones que ofrecen las impresoras y así sacar el máximo provecho.</p>
+            <p>Nuestra misión es revolucionar la industria de la fabricación mediante la impresión 3D, ofreciendo soluciones innovadoras y personalizadas que impulsen la creatividad y eficiencia de nuestros clientes. Nos comprometemos a proporcionar productos de alta calidad, sostenibles y accesibles, que transformen ideas en realidades tangibles.</p>
+            <p>Ser líderes regionales en tecnología de impresión 3D, reconocidos por nuestra excelencia en innovación, calidad y servicio al cliente. Aspiramos a ser la primera opción para empresas y particulares que buscan soluciones de distribución y fabricación avanzadas, contribuyendo al desarrollo de una sociedad más creativa y sostenible.</p>
+        </div>
 
 
     </section>
@@ -79,7 +169,4 @@
         hola
     </section>
 </body>
-
-
-
 </html>
