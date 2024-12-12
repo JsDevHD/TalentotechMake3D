@@ -65,7 +65,10 @@
             flex-direction: row;
             margin-bottom: 10px;
         }
-        .dir_p_espacio{
+        .dir_l_espacio{
+            margin-left: 40px;
+        }
+        .dir_r_espacio{
             margin-right: 30px;
             
         }
@@ -135,6 +138,7 @@
         }
         footer{
             bottom: 0;
+            background-color: white;
         }
 
         
@@ -149,6 +153,7 @@
             <a href="#nosotros">Servicios/Productos</a>
             <a href="#galeria">Galeria</a>
             <a href="#contacto">Contactanos</a>
+            <a href="#pqr">PQR</a>
         </ul>
     </nav>
     <header id="home">
@@ -182,11 +187,23 @@
         hola
     </section> -->
     <footer id="contacto">
-        <section> 
-        <h1>Contactanos</h1></section>
-        <div class="dir_enlinea"><p class="dir_p_espacio">Email:   </p> <input type="email" ></div>
-        <div class="dir_enlinea"><p >Comentario:</p><input type="text"><button>Enviar comentario</button></div>
-
+        <div class="dir_enlinea">
+            <div>
+                <section> 
+                    <h1>Contactanos</h1>
+                </section>
+                <div class="dir_enlinea"><p class="dir_r_espacio">Email:   </p> <input type="email" ></div>
+                <div class="dir_enlinea"><p >Comentario:</p><input type="text"><button>Enviar comentario</button></div>
+            </div>
+            <div class="dir_l_espacio"></div>
+            <div id="pqr" class="dir_r_espacio">
+                <section>
+                    <h1>PQR</h1>
+                </section>
+                <div class="dir_enlinea"><p class="dir_r_espacio">Email:   </p> <input type="email" ></div>
+                <div class="dir_enlinea"><p >Descripción PQR:</p><input type="text"><button>Enviar PQR</button></div>
+            </div>
+        </div>
     </footer>
 </body>
 </html>
