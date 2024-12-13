@@ -10,7 +10,7 @@
     }
     body {
             font-family: Arial, sans-serif;
-            background-color: #a6e7e4;
+            background-color: #a6b1e7;
             margin: 0%;
             background-size: contain;
             background-repeat: repeat;
@@ -255,7 +255,26 @@
     <!-- <section>
         hola
     </section> -->
-    <hr>
+  
+<div class="sidebar"></div>
+    <h3 class="section-title">Testimonios-Casos de Éxito</h3><br><br>
+    <ul class="list">
+        <a>Juan Pérez, director de I+D.</a><br>
+        <p>"Gracias a los servicios de impresión 3D de Make3D, pudimos reducir el tiempo de desarrollo de nuestros prototipos en un 50%. La precisión y calidad de las piezas impresas nos permitieron realizar pruebas más rápidas y eficientes, lo que resultó en un producto final superior. ¡Recomendamos encarecidamente sus servicios!"</p><br>
+        <a>Carlos Martínez, Arquitecto.</a><br>
+        <p>	"Trabajar con Make3D ha sido una experiencia increíble. Sus servicios de impresión 3D nos permitieron crear maquetas arquitectónicas detalladas y sostenibles en un tiempo récord. La atención al detalle y el compromiso con la calidad son insuperables. Sin duda, seguiremos colaborando con ellos en futuros proyectos."</p><br>
+        <a>Laura Rodríguez, Gerente de Producción.</a><br>
+        <p>	"La capacidad de Make3D para producir piezas personalizadas y de alta calidad ha sido un cambio de juego para nuestra empresa. Hemos podido reducir los costos de producción y mejorar la eficiencia de nuestra cadena de suministro. La rapidez y precisión de sus servicios son inigualables. ¡Altamente recomendados!"</p><br>
+    </ul>
+
+    <h3 class="section-title">Noticias</h3>
+    <ul class="list">
+        <li> <a href="https://www.3dnatives.com/es/ensayo-bioimpresion-3d-mejorar-tratamiento-quemaduras-291120242/" >Mapas 3D para personas con discapacidad visual Touch Mapper</a></li><br><br>
+        <li><a href="https://www.3dnatives.com/es/implantes-personalizados-sangre-3d-051220242/">Desarrollan implantes personalizados basados en sangre e impresos en 3D</a></li><br><br>
+        <li><a href="https://www.3dnatives.com/es/ensayo-bioimpresion-3d-mejorar-tratamiento-quemaduras-291120242/">Próximo ensayo aplicará la bioimpresión 3D para mejorar el tratamiento de quemaduras extensas</a></li><br><br>
+    </ul>
+</div>
+
     <footer id="contacto">
         <div class="dir_enlinea dir_just" >
             <div>
@@ -275,17 +294,20 @@
             <div class="dir_l_espacio"></div>
             <div id="pqr" >
                 <section>
-                    <h1>PQR</h1>
+                    <h1>Preguntas Frecuentes (FAQ's)</h1>
                 </section>
-                <form action="/enviar_mensaje" method="POST">
-                    <label for="nombre">Nombre:</label><br>
-                    <input type="text" id="nombre" name="nombre" required><br><br>
-                    <label for="email">Correo electrónico:</label><br>
-                    <input type="email" id="email" name="email" required><br><br>
-                    <label for="mensaje">Mensaje:</label><br>
-                    <textarea id="mensaje" name="mensaje" rows="4" required></textarea><br><br>
-                    <button type="submit">Enviar PQR</button>
-                </form>
+<form action="/enviar_mensaje" method="POST">
+    <label for="nombre">Nombre:</label><br>
+    <input type="text" id="nombre" name="nombre" required><br><br>
+    <label for="email">Correo electrónico:</label><br>
+    <input type="email" id="email" name="email" required><br><br>
+    <label for="mensaje">Mensaje:</label><br>
+    <textarea id="mensaje" name="mensaje" rows="4" required></textarea><br><br>
+    <div class="dir_enlinea"><p class="dir_r_espacio">Email adicional: </p> <input type="email" ></div>
+    <div class="dir_enlinea"><p>Pregunta:</p><input type="text"><button>Enviar</button></div>
+    <button type="submit">Enviar PQR</button>
+</form>
+
             </div>
         </div>
     </footer>
