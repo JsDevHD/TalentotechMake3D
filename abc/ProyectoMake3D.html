@@ -11,6 +11,8 @@
     body {
             font-family: Arial, sans-serif;
             background-image: linear-gradient(to right, rgba(174, 237, 252, 0.906) , rgba(29, 53, 119, 0.765));
+            background-color: #a6b1e7;
+            margin: 0%;
             background-size: contain;
             background-repeat: repeat;
             background-attachment: local;
@@ -59,6 +61,21 @@
             justify-content: space-around;
 
         }
+        .dir_enlinea{
+            display: flex;
+            flex-direction: row;
+            margin-bottom: 10px;
+        }
+        .dir_l_espacio{
+            margin-left: 40px;
+        }
+        .dir_r_espacio{
+            margin-right: 30px;
+            
+        }
+        .dir_just{
+            justify-content: space-between;
+        }
 
         nav ul a {
             color: rgb(242, 246, 252);
@@ -73,7 +90,7 @@
                 
         }
         nav a:hover {
-            background-color: #4aa3df;
+            background-color: #dfad4a;
             color: rgb(0, 0, 0);
             font-size: 120%;
         }
@@ -108,6 +125,7 @@
 
                    
         }
+        
 
 
         section .h1-nosotros h1{
@@ -161,13 +179,79 @@
             text-align: center;
             max-width: 100vw;
         }
+        footer{
+            bottom: 0;
+            background-color: white;
+        }
 
+
+        .section-productos {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+            margin-bottom: 50px;
+        }
+
+        .div-principal-productos {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+            width: 80%;
+        }
+
+        .Div-productos {
+            display: flex;
+
+        }
+
+        .div-producto {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            align-content: center;
+            background-color: rgba(74,163,223,0.5);
+            margin: 10px;
+            padding: 10px;
+            color: white;
+            border-radius: 50px;
+        }
+
+        .img-producto {
+            width: 200px;
+            margin-bottom: 5px;
+        }
+
+            .section-galeria{
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                flex-direction: column;
+            }
+
+            .div-principal-galeria {
+                width: 80%;
+                max-width: 1100px;
+                margin: auto;
+                margin-bottom: 60px;
+                display: grid;
+                grid-template-columns: repeat(3, 1fr);
+                grid-template-rows: auto;
+                grid-gap: 10px;
+            }
+
+            .div-principal-galeria .caja-imagen figure{
+                width: 100%;
+                height: 100%;
+            }
+
+            .div-principal-galeria .caja-imagen img{
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+            }
         
-        
-
-
-        
-
 </style>
     <link rel="icon" href="imagns/Make3Dlogo.ico" type="image/x-icon">
 </head>         
@@ -176,8 +260,10 @@
         <ul>
             <a href="#home">Inicio</a>
             <a href="#nosotros">Servicios/Productos</a>
-            <a href="#home">Galeria</a>
-            <a href="#home">Contactanos</a>
+            <a href="#galeria">Galeria</a>
+            <a href="#contacto">Contactanos</a>
+            <a href="#pqr">PQR</a>
+            <a href="#faq">FAQ</a>
         </ul>
     </nav>
     <header id="home">
@@ -207,6 +293,7 @@
         </div>
 
     </section>
+
     <section id="Testimonio">
         <div class="div_titulotestimonio">
             <h1><strong>Testimonios y casos de exito</strong></h1>
@@ -220,6 +307,162 @@
             <p>"La capacidad de Make3D para producir piezas personalizadas y de alta calidad ha sido un cambio de juego para nuestra empresa. Hemos podido reducir los costos de producción y mejorar la eficiencia de nuestra cadena de suministro. La rapidez y precisión de sus servicios son inigualables. ¡Altamente recomendados!" - Laura Rodríguez, Gerente de Producción.</p>
         </div>
     
+  
+<div class="sidebar"></div>
+
+    <h3 class="section-title">Noticias</h3>
+    <ul class="list">
+        <li> <a href="https://www.3dnatives.com/es/ensayo-bioimpresion-3d-mejorar-tratamiento-quemaduras-291120242/" >Mapas 3D para personas con discapacidad visual Touch Mapper</a></li><br><br>
+        <li><a href="https://www.3dnatives.com/es/implantes-personalizados-sangre-3d-051220242/">Desarrollan implantes personalizados basados en sangre e impresos en 3D</a></li><br><br>
+        <li><a href="https://www.3dnatives.com/es/ensayo-bioimpresion-3d-mejorar-tratamiento-quemaduras-291120242/">Próximo ensayo aplicará la bioimpresión 3D para mejorar el tratamiento de quemaduras extensas</a></li><br><br>
+    </ul>
+</div>
+
+    <footer id="contacto">
+        <div class="dir_enlinea dir_just" >
+            <div>
+                <section> 
+                    <h1>Contactanos</h1>
+                </section>
+                <form action="/enviar_mensaje" method="POST">
+                    <label for="nombre">Nombre:</label><br>
+                    <input type="text" id="nombre" name="nombre" required><br><br>
+                    <label for="email">Correo electrónico:</label><br>
+                    <input type="email" id="email" name="email" required><br><br>
+                    <label for="mensaje">Mensaje:</label><br>
+                    <textarea id="mensaje" name="mensaje" rows="4" required></textarea><br><br>
+                    <button type="submit">Enviar comentario</button>
+                </form>
+            </div>
+            <div class="dir_l_espacio"></div>
+            <div id="pqr" >
+                <section>
+                    <h1>PQR</h1>
+                </section>
+<form action="/enviar_mensaje" method="POST">
+    <label for="nombre">Nombre:</label><br>
+    <input type="text" id="nombre" name="nombre" required><br><br>
+    <label for="email">Correo electrónico:</label><br>
+    <input type="email" id="email" name="email" required><br><br>
+    <label for="mensaje">Mensaje:</label><br>
+    <textarea id="mensaje" name="mensaje" rows="4" required></textarea><br><br>
+    
+    <button type="submit">Enviar PQR</button>
+</form>
+
+            </div>
+        </div>
+    </footer>
+
+    <section class="section-productos">
+        <div class="div-principal-productos">
+
+            <h2>Productos y servicios</h2>
+            <div class="Div-productos">
+                
+                <div class="div-producto">
+                    <img class="img-producto" src="https://img.freepik.com/foto-gratis/disenador-usando-impresora-3d_23-2151037153.jpg?t=st=1734095139~exp=1734098739~hmac=5ac06d5796d4e2f29383a2689a327de402bccd7d42ec95d4ab0646d9a946f8e0&w=900" alt="Imagen de 3d">
+                <h3>Diseño de productos</h3>
+                <p>Creación de soluciones innovadoras adaptadas a tus necesidades.</p>
+                </div>
+                <div class="div-producto">
+                    <img class="img-producto" src="https://images.pexels.com/photos/19124461/pexels-photo-19124461/free-photo-of-herramientas-de-impresion-3d.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" alt="Impresion 3D">
+                    <h3>Impresión en 3D</h3>
+                    <p>Fabricación de objetos personalizados mediante tecnología de impresión 3D.</p>
+                </div>
+                <div class="div-producto">
+                    <img class="img-producto" src="https://img.freepik.com/foto-gratis/grupo-trabajadores-negocios-sonriendo-felices-confiados-trabajando-juntos-sonrisa-cara-aplaudiendo-ellos-oficina_839833-15713.jpg?t=st=1734096191~exp=1734099791~hmac=b140322eaccea9c6c65ccded06c6b9eed77e9afb883e6db86a9e55eded9adaeb&w=900" alt="Asesorías personalizadas">
+                    <h3>Asesorías personalizadas</h3>
+                    <p>Consultoría especializada para optimizar proyectos y procesos.</p>
+                </div>
+            </div>
+            <div>
+                <div class="div-producto">
+                    <img class="img-producto" src="https://img.freepik.com/foto-gratis/disenador-usando-impresora-3d_23-2150942082.jpg?t=st=1734096294~exp=1734099894~hmac=177df4e3e77307a4d8f1fa5c0c1fe3fdd1f60f844e28ec4478dac8c135984807&w=900" alt="enta de impresoras">
+                    <h3>Venta de impresoras</h3>
+                    <p>Comercialización de impresoras 3D de alta calidad.</p>
+                </div>
+                <div class="div-producto">
+                    <img class="img-producto" src="https://img.freepik.com/foto-gratis/personas-que-utilizan-dispositivos-digitales-reunion_23-2149085935.jpg?t=st=1734096342~exp=1734099942~hmac=f730f919b4b04f8f91fbe236ff6e3dee00194ff6b4434188907693e099eaeef9&w=900" alt="img-producto">
+                    <h3>Capacitaciones</h3>
+                    <p>Entrenamiento práctico para dominar el uso de tecnologías y herramientas.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <Section class="section-galeria">
+        <h2>Galeria de imagenes</h2>
+        <div class="div-principal-galeria">
+            <div class="caja-imagen">
+                <a href="#">
+                    <figure>
+                        <img src="https://img.freepik.com/foto-gratis/disenador-usando-impresora-3d_23-2151037120.jpg?t=st=1734098351~exp=1734101951~hmac=b34532f910d2b1ecdccf9c9f067aaab5846d5599ead5e3fbcf486cb1ae44a935&w=900" alt="">
+                    </figure>
+                </a>
+            </div>
+            <div class="caja-imagen">
+                <a href="#">
+                    <figure>
+                        <img src="https://img.freepik.com/foto-gratis/estilo-vida-disenador-usando-impresora-3d_23-2151019889.jpg?t=st=1734098376~exp=1734101976~hmac=0211de98c9fa72aed53900538f23e489ba7df2d9baf4c72f870ad535dfadbf15&w=900" alt="">
+                    </figure>
+                </a>
+            </div>
+            <div class="caja-imagen">
+                <a href="#">
+                    <figure>
+                        <img src="https://img.freepik.com/foto-gratis/estilo-vida-disenador-usando-impresora-3d_23-2151019929.jpg?t=st=1734098393~exp=1734101993~hmac=42bcb40a88c55c3777aaf98510b3beba57dd1c0b55a0c87b76235a9534311374&w=900" alt="">
+                    </figure>
+                </a>
+            </div>
+            <div class="caja-imagen">
+                <a href="#">
+                    <figure>
+                        <img src="https://img.freepik.com/foto-gratis/estilo-vida-disenador-usando-impresora-3d_23-2151019929.jpg?t=st=1734098393~exp=1734101993~hmac=42bcb40a88c55c3777aaf98510b3beba57dd1c0b55a0c87b76235a9534311374&w=900" alt="">
+                    </figure>
+                </a>
+            </div>
+            <div class="caja-imagen">
+                <a href="#">
+                    <figure>
+                        <img src="https://img.freepik.com/foto-gratis/estilo-vida-disenador-usando-impresora-3d_23-2151019881.jpg?t=st=1734098433~exp=1734102033~hmac=fe459d3de159badee0cd94021c4d8f97b42d234c33e7f310cb6420cc1d5075ab&w=900" alt="">
+                    </figure>
+                </a>
+            </div>
+            <div class="caja-imagen">
+                <a href="#">
+                    <figure>
+                        <img src="https://img.freepik.com/foto-gratis/disenador-usando-impresora-3d_23-2151037094.jpg?t=st=1734098450~exp=1734102050~hmac=182070ff962fe7b5cec334d3f2d7fc593cbba097a9160eb6d99052c3504a7d70&w=900" alt="">
+                    </figure>
+                </a>
+            </div>
+            <div class="caja-imagen">
+                <a href="#">
+                    <figure>
+                        <img src="https://img.freepik.com/foto-gratis/disenadores-que-usan-impresora-3d_23-2151037123.jpg?t=st=1734098476~exp=1734102076~hmac=98741a05ea776274cf83cf08a1ddcaa0ce164000469fbf3eb9547f4d45459411&w=1060" alt="">
+                    </figure>
+                </a>
+            </div>
+            <div class="caja-imagen">
+                <a href="#">
+                    <figure>
+                        <img src="https://img.freepik.com/foto-gratis/disenador-usando-impresora-3d_23-2151037103.jpg?t=st=1734098761~exp=1734102361~hmac=28286802dce3490492215be2d07b308df3a0698b49bbefcdf6c133034c265990&w=900" alt="">
+                    </figure>
+                </a>
+            </div>
+            <div class="caja-imagen">
+                <a href="#">
+                    <figure>
+                        <img src="https://img.freepik.com/foto-gratis/disenador-trabajando-modelo-3d_23-2149371848.jpg?t=st=1734098797~exp=1734102397~hmac=3077ea6b93ab6803949de4a291bb3ecd032c1413f48e1ed6e347d6a4ec5d1478&w=900" alt="">
+                    </figure>
+                </a>
+            </div>
+            
+        </div>
+    </Section>
+    <section>
+        <h2 id="faq">Preguntas frecuentes (FAQ)</h2>
+        <p> <strong>Tienen entregas a domicilio ?  Si</strong></p>
     </section>
 </body>
 </html>
