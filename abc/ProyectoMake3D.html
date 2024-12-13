@@ -189,22 +189,37 @@
     <!-- <section>
         hola
     </section> -->
+    <hr>
     <footer id="contacto">
         <div class="dir_enlinea dir_just" >
             <div>
                 <section> 
                     <h1>Contactanos</h1>
                 </section>
-                <div class="dir_enlinea"><p class="dir_r_espacio">Email:   </p> <input type="email" ></div>
-                <div class="dir_enlinea"><p >Comentario:</p><input type="text"><button>Enviar comentario</button></div>
+                <form action="/enviar_mensaje" method="POST">
+                    <label for="nombre">Nombre:</label><br>
+                    <input type="text" id="nombre" name="nombre" required><br><br>
+                    <label for="email">Correo electrónico:</label><br>
+                    <input type="email" id="email" name="email" required><br><br>
+                    <label for="mensaje">Mensaje:</label><br>
+                    <textarea id="mensaje" name="mensaje" rows="4" required></textarea><br><br>
+                    <button type="submit">Enviar comentario</button>
+                </form>
             </div>
             <div class="dir_l_espacio"></div>
             <div id="pqr" >
                 <section>
                     <h1>PQR</h1>
                 </section>
-                <div class="dir_enlinea"><p class="dir_r_espacio">Email:   </p> <input type="email" ></div>
-                <div class="dir_enlinea"><p >Descripción PQR:</p><input type="text"><button>Enviar PQR</button></div>
+                <form action="/enviar_mensaje" method="POST">
+                    <label for="nombre">Nombre:</label><br>
+                    <input type="text" id="nombre" name="nombre" required><br><br>
+                    <label for="email">Correo electrónico:</label><br>
+                    <input type="email" id="email" name="email" required><br><br>
+                    <label for="mensaje">Mensaje:</label><br>
+                    <textarea id="mensaje" name="mensaje" rows="4" required></textarea><br><br>
+                    <button type="submit">Enviar PQR</button>
+                </form>
             </div>
         </div>
     </footer>
