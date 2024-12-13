@@ -10,12 +10,12 @@
     }
     body {
             font-family: Arial, sans-serif;
+            background-image: linear-gradient(to right, rgba(174, 237, 252, 0.906) , rgba(29, 53, 119, 0.765));
             background-color: #a6b1e7;
             margin: 0%;
             background-size: contain;
             background-repeat: repeat;
             background-attachment: local;
-            background-image: url(https://image.slidesdocs.com/responsive-images/background/business-card-square-body-blue-and-white-minimalist-powerpoint-background_02e71ec1ca__960_540.jpg);
         }
 
         header {
@@ -51,7 +51,7 @@
         nav{
             width: 100vw;
             height: 7vh; 
-            background-color: rgb(0, 0, 0);
+            background-color: rgba(0, 0, 0,0.7);
             position:fixed;
             z-index: 99;
         }
@@ -87,7 +87,7 @@
             text-align: center; 
             justify-content: center;
             align-items: center;
-            
+                
         }
         nav a:hover {
             background-color: #dfad4a;
@@ -118,32 +118,72 @@
             text-align: center; 
             align-items: center;
             justify-content: space-around;
+            align-content: center;
+            padding: 1%;
+            margin: 50px;
+            background-color: rgba(206, 238, 245, 0.797);
 
-
-        
+                   
         }
         
 
-        section div img{
-            margin-top: 20px;
-            filter: invert(20%);;
-        }
 
-        section div h1{
+        section .h1-nosotros h1{
             margin-right: 20px;
             margin-top: 20px;
             max-width: 99px;
+            padding: 0;
+
         }
         section div p{
             margin: 20px;
             text-align: justify; 
+            padding: 0;
             
 
+        }
+
+        .titulo-nosotros{
+            margin-left: 50px;
+            margin-right: 50px;
+            margin-bottom: 0px;
+            margin-top: 0px;
+        }
+
+        .titulo-nosotrosimg{
+            margin-left: 50px;
+            margin-right: 50px;
+            margin-bottom: 0px;
+            margin-top: 50px;
+            
+        }
+
+        .titulo-nosotrosimg img{
+            filter: invert(30%);
+        }
+
+        .div_testimonio{
+            display: flex;
+            justify-content: space-between;
+            flex-direction: column;
+            margin: 50px;
+            border:4px solid;
+            border-image: linear-gradient(45deg, rgba(0, 0, 255, 0.637), rgba(162, 196, 222, 0.916)) 1
+        }
+
+        .div_titulotestimonio {
+            display: flex;
+            text-align: center; 
+            justify-content: center;
+            align-items:    center;
+            text-align: center;
+            max-width: 100vw;
         }
         footer{
             bottom: 0;
             background-color: white;
         }
+
 
         .section-productos {
             display: flex;
@@ -214,7 +254,7 @@
         
 </style>
     <link rel="icon" href="imagns/Make3Dlogo.ico" type="image/x-icon">
-</head>     
+</head>         
 <body>
     <nav>
         <ul>
@@ -236,14 +276,15 @@
     </header>
     
     <section id="nosotros">
-       <div>
+       <div class="titulo-nosotrosimg">
          <img src="https://cdn-icons-png.flaticon.com/512/4906/4906519.png" alt="" width="80px" height="70px">
          <img src="https://cdn-icons-png.flaticon.com/512/1628/1628579.png" alt=""  width="70px" height="68px">
          <img src="https://cdn-icons-png.flaticon.com/512/3860/3860260.png" alt=""  width="80px" height="70px">
        </div>
-        <div> <h1><strong>Nosotros</strong></h1>
-            <h1><strong>Mision</strong></h1>
-            <h1><strong>Vision</strong></h1>
+        <div class="titulo-nosotros">
+            <h1 class="h1-nosotros"><strong>Nosotros</strong></h1>
+            <h1 class="h1-nosotros"><strong>Mision</strong></h1>
+            <h1 class="h1-nosotros"><strong>Vision</strong></h1>
         </div>
         <div>
             <p>Somos una empresa con amplia experiencia en el diseño e impresión de productos en 3D, asesorías y venta de insumos e impresoras; así mismo, realizamos talleres y capacitaciones para que conozcan las funciones que ofrecen las impresoras y así sacar el máximo provecho.</p>
@@ -251,22 +292,23 @@
             <p>Ser líderes regionales en tecnología de impresión 3D, reconocidos por nuestra excelencia en innovación, calidad y servicio al cliente. Aspiramos a ser la primera opción para empresas y particulares que buscan soluciones de distribución y fabricación avanzadas, contribuyendo al desarrollo de una sociedad más creativa y sostenible.</p>
         </div>
 
-
     </section>
-    <!-- <section>
-        hola
-    </section> -->
+
+    <section id="Testimonio">
+        <div class="div_titulotestimonio">
+            <h1><strong>Testimonios y casos de exito</strong></h1>
+        </div>
+        <div class="div_testimonio">
+            <img src="https://medicinaysaludpublica.blob.core.windows.net.optimalcdn.com/images/2022/05/05/sacs---2022-05-05t153542594-681c7b72.png" alt="" width="400px" height="200px">
+            <p>"Gracias a los servicios de impresión 3D de Make3D, pudimos reducir el tiempo de desarrollo de nuestros prototipos en un 50%. La precisión y calidad de las piezas impresas nos permitieron realizar pruebas más rápidas y eficientes, lo que resultó en un producto final superior. ¡Recomendamos encarecidamente sus servicios!" - Juan Pérez, director de I+D.</p>
+            <img src="https://boroktimes.com/wp-content/uploads/2023/07/channels4_profile-1200x1200.jpeg" alt="" width="400px" height="200px">
+            <p>"Trabajar con Make3D ha sido una experiencia increíble. Sus servicios de impresión 3D nos permitieron crear maquetas arquitectónicas detalladas y sostenibles en un tiempo récord. La atención al detalle y el compromiso con la calidad son insuperables. Sin duda, seguiremos colaborando con ellos en futuros proyectos." - Carlos Martínez, Arquitecto.</p>
+            <img src="https://www.publimetro.co/resizer/v2/C7MUGNO6YVHUXJTHSUIT6YXQQY.png?smart=true&auth=b36caa2b321d239353218df1fa0500c3d54192dd99b1257b85786bdd4d7e834b&width=1200&height=675" alt="" width="400px" height="200px">
+            <p>"La capacidad de Make3D para producir piezas personalizadas y de alta calidad ha sido un cambio de juego para nuestra empresa. Hemos podido reducir los costos de producción y mejorar la eficiencia de nuestra cadena de suministro. La rapidez y precisión de sus servicios son inigualables. ¡Altamente recomendados!" - Laura Rodríguez, Gerente de Producción.</p>
+        </div>
+    
   
 <div class="sidebar"></div>
-    <h3 class="section-title">Testimonios-Casos de Éxito</h3><br><br>
-    <ul class="list">
-        <a>Juan Pérez, director de I+D.</a><br>
-        <p>"Gracias a los servicios de impresión 3D de Make3D, pudimos reducir el tiempo de desarrollo de nuestros prototipos en un 50%. La precisión y calidad de las piezas impresas nos permitieron realizar pruebas más rápidas y eficientes, lo que resultó en un producto final superior. ¡Recomendamos encarecidamente sus servicios!"</p><br>
-        <a>Carlos Martínez, Arquitecto.</a><br>
-        <p>	"Trabajar con Make3D ha sido una experiencia increíble. Sus servicios de impresión 3D nos permitieron crear maquetas arquitectónicas detalladas y sostenibles en un tiempo récord. La atención al detalle y el compromiso con la calidad son insuperables. Sin duda, seguiremos colaborando con ellos en futuros proyectos."</p><br>
-        <a>Laura Rodríguez, Gerente de Producción.</a><br>
-        <p>	"La capacidad de Make3D para producir piezas personalizadas y de alta calidad ha sido un cambio de juego para nuestra empresa. Hemos podido reducir los costos de producción y mejorar la eficiencia de nuestra cadena de suministro. La rapidez y precisión de sus servicios son inigualables. ¡Altamente recomendados!"</p><br>
-    </ul>
 
     <h3 class="section-title">Noticias</h3>
     <ul class="list">
